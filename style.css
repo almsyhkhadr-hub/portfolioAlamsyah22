@@ -1,0 +1,92 @@
+/* ========================================================
+   PORTFOLIO STYLESHEET - ALAMSYAH KHADIR RATULOLY
+   Theme: Creative Dark Mode (Spiderman / Cyberpunk Accent)
+   ======================================================== */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #08090d;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff2a4b;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e21c3b;
+}
+
+/* Spider-web Pattern Background */
+.spider-web-bg {
+  background-color: #08090d;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(255, 42, 75, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(2, 132, 199, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(255, 42, 75, 0.04) 0%, transparent 70%);
+  background-attachment: fixed;
+}
+
+/* Glassmorphism Card Effect */
+.glass-card {
+  background: rgba(15, 19, 29, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 42, 75, 0.35);
+  box-shadow: 0 22px 45px -10px rgba(255, 42, 75, 0.18);
+}
+
+/* Glowing Typography */
+.text-glow-red {
+  text-shadow: 0 0 25px rgba(255, 42, 75, 0.55), 0 0 50px rgba(255, 42, 75, 0.3);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+}
+
+/* Typewriter Blinking Cursor */
+.cursor-blink {
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  background-color: #ff2a4b;
+  margin-left: 5px;
+  vertical-align: middle;
+  animation: blink 0.9s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Spiderman Web Line */
+.web-line {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  width: 2px;
+  height: 220px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(255,255,255,0.7), rgba(255,42,75,0.9));
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(255,255,255,0.6);
+  z-index: 10;
+}
+
+/* Hanging Spiderman Origin Anchor */
+.hanging-spiderman {
+  transform-origin: top center;
+}
+
+/* Smooth Section Scrolling Offset for Sticky Navbar */
+section {
+  scroll-margin-top: 80px;
+}
